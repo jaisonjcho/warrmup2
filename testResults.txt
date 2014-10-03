@@ -1,0 +1,8 @@
+Running `./manage.py test logincounter` attached to terminal... up, run.9234
+Creating test database for alias 'default'...
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+Destroying test database for alias 'default'...

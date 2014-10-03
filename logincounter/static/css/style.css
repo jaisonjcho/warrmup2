@@ -1,0 +1,69 @@
+/* This file contains the style parameters for the sample client. */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; 
+
+  }
+
+#home-page {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  background-color: #89c15b;
+  padding: 20px; 
+
+  }
+
+
+.box {
+    width: 420px;
+    padding: 30px;
+
+    background: #FAF0E6;
+    margin-top: 80px;
+}
+
+.message {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"]{
+  border: 1.5px solid #CCC;
+
+  font-size: 0.9em; }
+
+input[type="text"]:hover{
+  border: 1px solid #888; }
+  
+input[type="password"]{
+  border: 1.5px solid #CCC;
+  font-size: 0.9em; }
+  
+  input[type="password"]:hover{
+  border: 1px solid #888; }
+
+input[type=submit], button{
+	width: 140px;
+	height: 44px;
+	font-size: 16px;
+	border: solid 2px #89c15b;
+	text-align: center;
+	color: white;
+	font-family: "proxima-nova",sans-serif;
+
+    margin-top: 15px;
+}
+
+input[type=submit]:hover {
+	color: #fff;
+
+}
