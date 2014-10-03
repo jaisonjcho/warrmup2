@@ -45,9 +45,31 @@ function handle_add_user_response(data, user) {
     }
 }
 
+$('#login-username').blur(function(){
+                          username = $('#login-username').val()
+                          if (username == ""){
+                            $('#login-message').html("The username cannot be empty")
+                          }
+                          else if (username.length > 128){
+                            $('#login-message').html("The username cannot be over 128 characters")
+                          }
+                          else{
+                            $('#login-message').html("Please sign in or create a new user")
+                          }
+                                            
+                          });
+                  
+$('#login-password').blur(function(){
+                          password = $('#login-password').val()
+                          if (password.length > 128){
+                            $('#login-message').html("The password cannot be ver 128 characters")
+                          }
+                                            
+                          });
+                  
 // POST to /users/login -- log in user and increase count
-$('#login-button').click(function(e) {
-    e.preventDefault()
+$('#login-button').click(function() {
+    //e.preventDefault()
     username = $('#login-username').val()
     password = $('#login-password').val()
     json_request("/users/login", { user: username, password: password }, function(data) { return handle_login_response(data, username); }, function(err) { alert('error occurred on request'); });
